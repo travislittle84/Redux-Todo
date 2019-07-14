@@ -2,6 +2,9 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { toggleCompletedAction, deleteTodoAction } from '../actions'
 
+// reacttrap components
+import { Button } from 'reactstrap'
+
 import deleteImg from "../images/cancel.png"
 
 function TodoList (props) {
@@ -13,7 +16,7 @@ function TodoList (props) {
     const handleDelete = (event) => {
         event.preventDefault()
         event.stopPropagation()
-        props.deleteTodoAction(event.target.id)
+        props.deleteTodoAction(event.target.parentNode.id)
     }
     const { todos } = props
     return (
@@ -28,7 +31,7 @@ function TodoList (props) {
                       onClick={handleClick}
                       className={todo.completed ? "completed" : ""}>
                       {todo.value}
-                      <img className="icon" name="delete-icon" id={index} onClick={handleDelete} src={deleteImg}/>                     
+                      <Button close className="icon" name="delete-icon" id={index} onClick={handleDelete} src={deleteImg} />                    
                     </li>
                     
             )

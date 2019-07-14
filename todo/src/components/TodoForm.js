@@ -2,6 +2,9 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { addTodoAction } from '../actions'
 
+// reactsrap components
+import { Button, Input, Form } from 'reactstrap'
+
 class TodoForm extends React.Component {
     constructor(){
         super()
@@ -28,13 +31,13 @@ class TodoForm extends React.Component {
             todo: ''
         })
     }
-    
+
     render() {
         return(
-        <form onSubmit={this.handleSubmit}>
-            <input type="text" name="todo" onChange={this.handleChange} value={this.state.todo} placeholder="What do you need to do?"/>
-            <button type="submit">Add Todo</button>
-        </form>
+        <Form onSubmit={this.handleSubmit}>
+            <Input type="text" size="sm" name="todo" onChange={this.handleChange} value={this.state.todo} placeholder="What do you need to do?"/>
+            <Button color="primary" size="sm">Add Todo</Button>            
+        </Form>
         )    
     }
 }
