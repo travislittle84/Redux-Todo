@@ -35,7 +35,6 @@ export default function(state = initialState, action) {
                 todos: newToggleList
             }         
         case DELETE_TODO:       // stretch goal not yet impletemented
-            console.log("delete payload", action.payload)
             const idToRemove = parseInt(action.payload.id)
             
             const newList = state.todos.filter((todo, index) => {
