@@ -1,0 +1,125 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+  background-color: black;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.App {
+  width: 350px;
+  padding: 12px;
+  margin: 12px;
+  background-color: #282c34;
+  color: gainsboro;
+  border: 2px solid gainsboro;
+  border-radius: 12.5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.App h1 {
+  font-size: 1.8rem;
+}
+
+.App h3 {
+  font-size: 1.2rem;
+}
+
+.App h2 {
+  font-size: .8rem;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App .todo-list {
+  margin: 20px 0;
+}
+
+.App #todo-input-form {
+  padding: 3px;
+}
+
+.App .todo-item {
+  padding: 12px;
+  border: 2px solid gainsboro;
+  border-radius: 12.5px;
+  margin: 6px 3px;
+}
+
+.App .todo-item:hover {
+  background-color: #43464D;
+}
+
+.App #add-todo-button {
+  color: gainsboro;
+  margin-top: 12px;
+  border: 2px solid gainsboro;
+}
+
+.App #todo-input-box {
+  border: 2px solid gainsboro;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.delete-icon {
+  color: gainsboro;
+}
+.delete-icon:hover{
+  color: gainsboro;
+}
+
+
