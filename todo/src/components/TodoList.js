@@ -20,20 +20,18 @@ function TodoList (props) {
     }
     const { todos } = props
     return (
-    <ul>
+    <ul className="todo-list">
         {todos.map((todo, index) => {
             return (
-                <li 
-                      id={index}
-                      fuck="delete"
-                      name="todo-item" 
-                      key={index} 
-                      onClick={handleClick}
-                      className={todo.completed ? "completed" : ""}>
-                      {todo.value}
-                      <Button close className="icon" name="delete-icon" id={index} onClick={handleDelete} src={deleteImg} />                    
-                    </li>
-                    
+                <li  
+                    id={index}
+                    name="todo-item" 
+                    key={index} 
+                    onClick={handleClick}
+                    className={todo.completed ? "todo-item completed" : "todo-item"}>
+                    {todo.value}
+                    <Button close className="delete-icon" name="delete-icon" id={index} onClick={handleDelete} src={deleteImg} />                    
+                </li>     
             )
         })}
     </ul>

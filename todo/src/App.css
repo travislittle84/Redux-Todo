@@ -29,7 +29,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
+  background-color: black;
 }
 ol, ul {
 	list-style: none;
@@ -48,8 +49,26 @@ table {
 }
 
 .App {
-  text-align: center;
   width: 350px;
+  padding: 12px;
+  margin: 12px;
+  background-color: #282c34;
+  color: gainsboro;
+  border: 2px solid gainsboro;
+  border-radius: 12.5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.App h1 {
+  font-size: 1.8rem;
+}
+
+.App h3 {
+  font-size: 1.2rem;
+}
+
+.App h2 {
+  font-size: .8rem;
 }
 
 .App-header {
@@ -63,18 +82,44 @@ table {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App .todo-list {
+  margin: 20px 0;
+}
+
+.App #todo-input-form {
+  padding: 3px;
+}
+
+.App .todo-item {
+  padding: 12px;
+  border: 2px solid gainsboro;
+  border-radius: 12.5px;
+  margin: 6px 3px;
+}
+
+.App .todo-item:hover {
+  background-color: #43464D;
+}
+
+.App #add-todo-button {
+  color: gainsboro;
+  margin-top: 12px;
+  border: 2px solid gainsboro;
+}
+
+.App #todo-input-box {
+  border: 2px solid gainsboro;
 }
 
 .completed {
   text-decoration: line-through;
-
 }
 
-.icon {
-  width: 20px;
-  padding: 3px;
+.delete-icon {
+  color: gainsboro;
+}
+.delete-icon:hover{
+  color: gainsboro;
 }
 
 
